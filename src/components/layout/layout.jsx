@@ -5,25 +5,23 @@ import Header from "../header";
 
 function Layout() {
   return (
-    <>
-      <Container fluid>
-        <Row>
-          <Col>
-            <Header />
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <Outlet />
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <Footer />
-          </Col>
-        </Row>
-      </Container>
-    </>
+    <Container fluid>
+      <Row>
+        <Col className="px-0">
+          <Header />
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <Outlet />
+        </Col>
+      </Row>
+      <Row>
+        <Col className="px-0">
+          <Footer />
+        </Col>
+      </Row>
+    </Container>
   );
 }
 
