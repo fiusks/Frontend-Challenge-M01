@@ -5,10 +5,10 @@ import trianglesIcon from "../../assets/images/trianglesHeader.svg";
 
 function Header() {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="light" expand="lg" className="layout-header px-5">
       <Container fluid>
-        <div className="teste">
-          <Navbar.Brand href="#home">
+        <div className="header-logo-container">
+          <Navbar.Brand as={NavLink} to="home">
             <img src={trianglesIcon} alt="logo icon" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
