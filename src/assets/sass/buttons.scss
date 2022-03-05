@@ -1,23 +1,29 @@
 $mynewcolor: $primary-middle-dark;
 
-.btn-primary {
-  @include button-variant(
-    $mynewcolor,
-    $mynewcolor,
-    #fff,
-    lighten($mynewcolor, 5%),
-    lighten($mynewcolor, 10%),
-    darken($mynewcolor, 30%)
-  );
+.btn {
   border-radius: 0px;
   padding: 1.7rem 2.4rem;
+}
+.btn-primary {
+  @include button-variant(
+    $background: $primary-middle-dark,
+    $border: $primary-middle-dark,
+    $color: #ffffff,
+    $hover-background: $primary-light,
+    $hover-border: $primary-light,
+    $hover-color: #ffffff,
+    $active-background: $primary-light,
+    $active-border: $primary-light,
+    $active-color: #ffffff
+  );
 }
 
 .btn-outline-primary {
   @include button-outline-variant(
-    $mynewcolor,
-    #222222,
-    lighten($mynewcolor, 5%),
-    $mynewcolor
+    $color: $primary-dark,
+    $color-hover: #fafafa,
+    $active-background: $primary-dark,
+    $active-border: $primary-dark,
+    $active-color: #fafafa
   );
 }
