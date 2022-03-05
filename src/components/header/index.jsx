@@ -1,15 +1,20 @@
 import "./style.scss";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
+import trianglesIcon from "../../assets/images/trianglesHeader.svg";
 
 function Header() {
   return (
     <Navbar bg="light" expand="lg">
       <Container fluid>
-        <Navbar.Brand href="#home">My Portfolio</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <div className="teste">
+          <Navbar.Brand href="#home">
+            <img src={trianglesIcon} alt="logo icon" />
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        </div>
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+          <Nav className="me-auto text-center">
             <Nav.Link as={NavLink} to="home">
               Home
             </Nav.Link>
