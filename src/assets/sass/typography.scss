@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Public+Sans&display=swap");
+
+$primary-font: "Ibarra Real Nova", serif;
+$secondary-font: "Public Sans", sans-serif;
+
+h1 {
+  font-family: $primary-font;
+  line-height: 5rem;
+  font-size: 5rem;
+  letter-spacing: -0.045rem;
+  font-weight: bold;
+}
+h2 {
+  font-family: $primary-font;
+  line-height: 4.2rem;
+  font-size: 4rem;
+  letter-spacing: -0.036rem;
+  font-weight: bold;
+}
+h3 {
+  font-family: $primary-font;
+  line-height: 3.6rem;
+  font-size: 3.2rem;
+  letter-spacing: -0.036rem;
+  font-weight: 400;
+}
+p {
+  font-family: $secondary-font;
+  line-height: 3rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+}

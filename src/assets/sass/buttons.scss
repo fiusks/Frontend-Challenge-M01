@@ -1,0 +1,23 @@
+$mynewcolor: $primary-middle-dark;
+
+.btn-primary {
+  @include button-variant(
+    $mynewcolor,
+    $mynewcolor,
+    #fff,
+    lighten($mynewcolor, 5%),
+    lighten($mynewcolor, 10%),
+    darken($mynewcolor, 30%)
+  );
+  border-radius: 0px;
+  padding: 1.7rem 2.4rem;
+}
+
+.btn-outline-primary {
+  @include button-outline-variant(
+    $mynewcolor,
+    #222222,
+    lighten($mynewcolor, 5%),
+    $mynewcolor
+  );
+}
