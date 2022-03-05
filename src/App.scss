@@ -1,3 +1,10 @@
-.App {
-  color: red;
+@import "~bootstrap/scss/bootstrap";
+@import "./assets/sass/typography.scss";
+@import "./assets/sass/colors.scss";
+@import "./assets/sass/buttons.scss";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
