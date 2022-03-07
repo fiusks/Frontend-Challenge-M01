@@ -1,3 +1,14 @@
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+
+$theme-colors: (
+  primary-light: #5fb4a2,
+  primary-middle-dark: #203a4c,
+  primary-dark: #33323d,
+  secondary-background: #fafafa,
+  secondary-input: #eaeaeb,
+);
+
 $primary-light: #5fb4a2;
 $primary-middle-dark: #203a4c;
 $primary-dark: #33323d;
