@@ -2,6 +2,7 @@ $mynewcolor: $primary-middle-dark;
 
 .btn {
   border-radius: 0px;
+  font-size: 1.2rem;
   padding: 1.7rem 2.4rem;
 }
 .btn-primary {
@@ -15,15 +16,5 @@ $mynewcolor: $primary-middle-dark;
     $active-background: $primary-light,
     $active-border: $primary-light,
     $active-color: #ffffff
-  );
-}
-
-.btn-outline-primary {
-  @include button-outline-variant(
-    $color: $primary-dark,
-    $color-hover: #fafafa,
-    $active-background: $primary-dark,
-    $active-border: $primary-dark,
-    $active-color: #fafafa
   );
 }
