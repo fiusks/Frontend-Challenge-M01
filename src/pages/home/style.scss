@@ -1,0 +1,65 @@
+@import "../../App.scss";
+
+.home-first-section {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  .main-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  button {
+    @extend .text-uppercase;
+    width: 50%;
+  }
+
+  .section-text {
+    background-color: #fafafa;
+    position: absolute;
+    bottom: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h1 {
+      padding: 3rem;
+    }
+  }
+}
+@include media-breakpoint-up(lg) {
+  .section-text {
+    height: 60%;
+    width: 40%;
+  }
+}
+@include media-breakpoint-down(xl) {
+  .section-text {
+    height: 100%;
+  }
+}
+@include media-breakpoint-down(lg) {
+  .section-text {
+    width: 100%;
+  }
+}
+@include media-breakpoint-down(md) {
+  .section-text {
+    height: 100%;
+    h1 {
+      font-size: 2.2rem;
+    }
+    button {
+      margin-bottom: 6rem;
+    }
+  }
+}
+
+.home-card-btn {
+  &.btn {
+    align-self: center;
+    width: 50%;
+    margin-top: 2.4rem;
+    @extend .text-uppercase;
+  }
+}
