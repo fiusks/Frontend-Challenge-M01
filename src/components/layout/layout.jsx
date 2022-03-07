@@ -12,11 +12,9 @@ function Layout() {
           <Header />
         </Col>
       </Row>
-      <Row>
-        <Col>
-          <Outlet />
-        </Col>
-      </Row>
+      <Container>
+        <Outlet />
+      </Container>
       <Row>
         <Col className="px-0">
           <Footer />
