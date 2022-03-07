@@ -1,4 +1,4 @@
-@import "../../assets/sass/colors.scss";
+@import "../../App.scss";
 
 .header-logo-container {
   width: 100vw;
@@ -7,9 +7,10 @@
 }
 
 .layout-header {
-  .navbar-light {
+  &.navbar-light {
     .navbar-nav {
       .nav-link {
+        color: $primary-dark;
         &:hover,
         &:focus {
           color: $primary-light;

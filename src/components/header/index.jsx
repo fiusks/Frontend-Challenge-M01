@@ -5,7 +5,7 @@ import trianglesIcon from "../../assets/images/trianglesHeader.svg";
 
 function Header() {
   return (
-    <Navbar bg="light" expand="lg" className="layout-header px-5">
+    <Navbar bg="light" expand="lg" className="layout-header p-5 mb-5">
       <Container fluid>
         <div className="header-logo-container">
           <Navbar.Brand as={NavLink} to="home">
