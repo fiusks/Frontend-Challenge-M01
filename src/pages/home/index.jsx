@@ -1,26 +1,35 @@
 import "./style.scss";
 import { Button, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { useRef } from "react";
 import PorfolioCard from "../../components/portfolio-card";
 import profilepicture from "../../assets/images/Me.jpg";
 import homeImage from "../../assets/images/homeimage.png";
+import arrowDown from "../../assets/images/arrowDown.png";
 function Home() {
   return (
     <Row>
-      <Col className="p-5">
-        <Row className=" mb-5">
-          <Col className="home-first-section ">
+      <Col className="home-container">
+        <Row className="hero-container">
+          <Col className="home-hero-section ">
             <img src={homeImage} alt="monitor with open app inside" />
-            <div className="section-text">
+            <div className="hero-section-text">
               <h1>
                 Olá, me chamo Rafael Barros e eu amo construir websites lindos
               </h1>
-              <Button>sobre mim</Button>
+              <Button as={"a"} href="#about-me">
+                <Row>
+                  <Col sm={2}>
+                    <img src={arrowDown} alt="arrow down icon" />
+                  </Col>
+                  <Col>about me</Col>
+                </Row>
+              </Button>
             </div>
           </Col>
         </Row>
-        <PorfolioCard img={profilepicture} btnText="go to my porfolio">
-          <h1>Sobre Mim</h1>
+        <PorfolioCard img={profilepicture}>
+          <h1 id="about-me">About me</h1>
           <p>
             Sou um desenvolvedor front-end júnior procurando por uma
             oportunidade. Eu foco em escrever HTML acessível, usando práticas

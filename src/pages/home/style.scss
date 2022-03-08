@@ -1,65 +1,80 @@
 @import "../../App.scss";
 
-.home-first-section {
-  display: flex;
-  flex-direction: column;
-  position: relative;
+.home-container {
+  .hero-container {
+    margin-bottom: 14.9rem;
+    .home-hero-section {
+      display: flex;
+      flex-direction: column;
+      position: relative;
 
-  .main-img {
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  button {
-    @extend .text-uppercase;
-    width: 50%;
-  }
+      a {
+        @extend .text-uppercase;
+        width: 50%;
+      }
 
-  .section-text {
-    background-color: #fafafa;
-    position: absolute;
-    bottom: 0;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    h1 {
-      padding: 3rem;
+      .hero-section-text {
+        background-color: #fafafa;
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h1 {
+          padding: 3rem;
+        }
+        @include media-breakpoint-up(lg) {
+          height: 60%;
+          width: 40%;
+        }
+        @include media-breakpoint-down(xl) {
+          height: 100%;
+        }
+        @include media-breakpoint-down(lg) {
+          width: 100%;
+        }
+        @include media-breakpoint-down(md) {
+          height: 100%;
+          h1 {
+            font-size: 2.2rem;
+          }
+          button {
+            margin-bottom: 6rem;
+          }
+        }
+      }
     }
   }
-}
-@include media-breakpoint-up(lg) {
-  .section-text {
-    height: 60%;
-    width: 40%;
-  }
-}
-@include media-breakpoint-down(xl) {
-  .section-text {
-    height: 100%;
-  }
-}
-@include media-breakpoint-down(lg) {
-  .section-text {
-    width: 100%;
-  }
-}
-@include media-breakpoint-down(md) {
-  .section-text {
-    height: 100%;
-    h1 {
-      font-size: 2.2rem;
+  .card-container {
+    .card-image {
+      img {
+        height: 100%;
+        width: auto;
+      }
     }
-    button {
-      margin-bottom: 6rem;
+    .col-card-content {
+      display: flex;
+      justify-content: flex-end;
+      .card-content {
+        padding: 5rem 0rem;
+      }
     }
   }
-}
+  @include media-breakpoint-up(xl) {
+    .card-content {
+      width: 70%;
+      .btn {
+        width: 50%;
+      }
+    }
+  }
 
-.home-card-btn {
-  &.btn {
-    align-self: center;
-    width: 50%;
-    margin-top: 2.4rem;
-    @extend .text-uppercase;
+  .home-card-btn {
+    &.btn {
+      align-self: center;
+      width: 50%;
+      margin-top: 2.4rem;
+      @extend .text-uppercase;
+    }
   }
 }
