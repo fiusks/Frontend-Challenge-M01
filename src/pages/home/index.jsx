@@ -1,6 +1,6 @@
 import "./style.scss";
-import { Button, Row, Col, Container } from "react-bootstrap";
-import { NavLink } from "react-router-dom";
+import { Button, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import PorfolioCard from "../../components/portfolio-card";
 import profilepicture from "../../assets/images/Me.jpg";
 import homeImage from "../../assets/images/homeimage.png";
@@ -34,7 +34,7 @@ function Home() {
             olhada no meu trabalho.
           </p>
           <Button
-            as={NavLink}
+            as={Link}
             to="/portfolio"
             variant="outline-primary-dark"
             className="home-card-btn"
