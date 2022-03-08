@@ -37,7 +37,7 @@ function ContactForm() {
           onSubmit={handleSubmit}
           className="contact-form-container"
         >
-          <Row className="mb-3">
+          <Row>
             <Form.Group as={Col} controlId="validationFormikName">
               <Form.Label>Name</Form.Label>
               <Form.Control

@@ -1,6 +1,9 @@
 @import "../../App.scss";
 
 .contact-form-container {
+  .row {
+    margin-bottom: 2.4rem;
+  }
   .form-label {
     font-size: 1.2rem;
     font-weight: bold;
@@ -9,12 +12,14 @@
   input,
   textarea {
     min-height: 4rem;
+    background-color: $secondary-input;
     &::placeholder {
       font-size: 1.2rem;
     }
   }
+
   button {
-    margin: 2.4rem 0rem;
+    margin-bottom: 10.9rem;
     padding: 1.7rem 4.4rem;
   }
 }
