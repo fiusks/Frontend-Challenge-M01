@@ -1,5 +1,5 @@
 import "./style.scss";
-import { Button, Row, Col, Form } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import ContactForm from "../../components/contactForm";
 
 function Contact() {

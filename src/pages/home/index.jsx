@@ -1,7 +1,6 @@
 import "./style.scss";
 import { Button, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { useRef } from "react";
 import PorfolioCard from "../../components/portfolio-card";
 import profilepicture from "../../assets/images/Me.jpg";
 import homeImage from "../../assets/images/homeimage.png";
