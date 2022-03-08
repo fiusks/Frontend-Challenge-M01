@@ -1,0 +1,30 @@
+@import "../../../App.scss";
+.portfolio-card {
+  .card-container {
+    .btn {
+      @extend .text-uppercase;
+    }
+    &:nth-child(odd) {
+      .col-card-content {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+  }
+  @include media-breakpoint-up(xl) {
+    .card-content {
+      width: 70%;
+      .btn {
+        width: 50%;
+      }
+    }
+  }
+  @include media-breakpoint-down(xl) {
+    .card-image {
+      margin-bottom: 3rem;
+    }
+    .card-content {
+      padding: 5rem 0rem;
+    }
+  }
+}
