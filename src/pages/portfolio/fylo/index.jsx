@@ -3,8 +3,8 @@ import { Button } from "react-bootstrap";
 import fyloMain from "../../../assets/images/fyloMain.png";
 import fyloPreview from "../../../assets/images/fyloPreview.png";
 import portfolioFylo from "../../../assets/images/portfolioFylo.png";
-import PorfolioSubpage from "../../../components/portfolio-subpage";
-import PortolioNavigation from "../../../components/portfolioNavigation";
+import PortfolioDetailed from "../../../components/portfolioDetailed";
+import PortfolioNavigation from "../../../components/portfolioNavigation";
 
 function Fylo() {
   const projectResume = (
@@ -34,14 +34,14 @@ function Fylo() {
   );
   return (
     <>
-      <PorfolioSubpage
+      <PortfolioDetailed
         mainImg={fyloMain}
         projectResume={projectResume}
         secondaryImg={portfolioFylo}
         auxiliarImg={fyloPreview}
         projectDescription={projectDescription}
       />
-      <PortolioNavigation />
+      <PortfolioNavigation />
     </>
   );
 }

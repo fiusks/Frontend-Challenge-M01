@@ -3,8 +3,8 @@ import { Button } from "react-bootstrap";
 import insureMain from "../../../assets/images/insureMain.png";
 import insurePreview from "../../../assets/images/insurePreview.png";
 import portfolioInsure from "../../../assets/images/portfolioInsure.png";
-import PorfolioSubpage from "../../../components/portfolio-subpage";
-import PortolioNavigation from "../../../components/portfolioNavigation";
+import PortfolioDetailed from "../../../components/portfolioDetailed";
+import PortfolioNavigation from "../../../components/portfolioNavigation";
 
 function Insure() {
   const projectResume = (
@@ -34,14 +34,14 @@ function Insure() {
   );
   return (
     <>
-      <PorfolioSubpage
+      <PortfolioDetailed
         mainImg={insureMain}
         projectResume={projectResume}
         secondaryImg={portfolioInsure}
         auxiliarImg={insurePreview}
         projectDescription={projectDescription}
       />
-      <PortolioNavigation />
+      <PortfolioNavigation />
     </>
   );
 }

@@ -3,7 +3,7 @@ import { Button } from "react-bootstrap";
 import bookmarkMain from "../../../assets/images/bookmarkMain.png";
 import bookmarkPreview from "../../../assets/images/bookmarkPreview.png";
 import portfolioBookmark from "../../../assets/images/portfolioBookmark.png";
-import PorfolioSubpage from "../../../components/portfolio-subpage";
+import PorfolioDetailed from "../../../components/portfolioDetailed";
 import PortolioNavigation from "../../../components/portfolioNavigation";
 
 function Bookmark() {
@@ -34,7 +34,7 @@ function Bookmark() {
   );
   return (
     <>
-      <PorfolioSubpage
+      <PorfolioDetailed
         mainImg={bookmarkMain}
         projectResume={projectResume}
         secondaryImg={portfolioBookmark}

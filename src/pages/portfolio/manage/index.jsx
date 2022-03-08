@@ -3,7 +3,7 @@ import { Button } from "react-bootstrap";
 import manageMain from "../../../assets/images/manageMain.png";
 import managePreview from "../../../assets/images/managePreview.png";
 import portfolioManage from "../../../assets/images/portfolioManage.png";
-import PorfolioSubpage from "../../../components/portfolio-subpage";
+import PorfolioDetailed from "../../../components/portfolioDetailed";
 import PortolioNavigation from "../../../components/portfolioNavigation";
 
 function Manage() {
@@ -34,7 +34,7 @@ function Manage() {
   );
   return (
     <>
-      <PorfolioSubpage
+      <PorfolioDetailed
         mainImg={manageMain}
         projectResume={projectResume}
         secondaryImg={portfolioManage}
