@@ -4,18 +4,22 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 8rem;
 }
 
 .card-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(51, 50, 61, 0.15);
+  border-bottom: 1px solid rgba(51, 50, 61, 0.15);
   min-height: 100%;
 
   h2 {
-    margin: 3.2rem 0rem;
+    margin-bottom: 2.8rem;
+  }
+  p {
+    margin-bottom: 5.4rem;
   }
 }
 
