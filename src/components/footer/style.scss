@@ -13,6 +13,7 @@
   &.navbar-light {
     .navbar-nav {
       .nav-link {
+        @extend .text-uppercase;
         color: $secondary-background;
         &:hover,
         &:focus {

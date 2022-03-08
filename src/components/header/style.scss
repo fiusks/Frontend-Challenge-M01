@@ -4,6 +4,10 @@
   margin-top: 6.4rem;
   margin-bottom: 9.4rem;
   padding: 0rem 16.5rem;
+  @include media-breakpoint-down(lg) {
+    padding: 0rem 10rem;
+  }
+
   .header-logo-container {
     width: 100vw;
     display: flex;
@@ -15,6 +19,7 @@
   &.navbar-light {
     .navbar-nav {
       .nav-link {
+        @extend .text-uppercase;
         color: $primary-dark;
         &:hover,
         &:focus {
