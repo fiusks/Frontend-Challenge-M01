@@ -6,20 +6,12 @@ import Header from "../header";
 
 function Layout() {
   return (
-    <Container fluid>
-      <Row>
-        <Col className="px-0">
-          <Header />
-        </Col>
-      </Row>
+    <Container fluid className="p-0">
+      <Header />
       <Container>
         <Outlet />
       </Container>
-      <Row>
-        <Col className="px-0">
-          <Footer />
-        </Col>
-      </Row>
+      <Footer />
     </Container>
   );
 }
