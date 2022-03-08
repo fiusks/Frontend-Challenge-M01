@@ -4,6 +4,12 @@
     brightness(108%) contrast(103%);
 }
 .layout-footer {
+  padding: 0rem 16.5rem;
+  height: 6rem;
+  .navigation-links {
+    gap: 4.2rem;
+    margin-left: 4.8rem;
+  }
   &.navbar-light {
     .navbar-nav {
       .nav-link {
