@@ -1,12 +1,17 @@
 @import "../../App.scss";
 
-.header-logo-container {
-  width: 100vw;
-  display: flex;
-  justify-content: space-between;
-}
-
 .layout-header {
+  margin-top: 6.4rem;
+  margin-bottom: 9.4rem;
+  padding: 0rem 16.5rem;
+  .header-logo-container {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+  }
+  .navigation-links {
+    gap: 4.2rem;
+  }
   &.navbar-light {
     .navbar-nav {
       .nav-link {
