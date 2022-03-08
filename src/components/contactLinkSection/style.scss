@@ -1,0 +1,42 @@
+@import "../../App.scss";
+.contact-link-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  &.row {
+    margin-top: 2rem;
+    margin-bottom: 15rem;
+  }
+  .contact-btn {
+    display: flex;
+    align-self: center;
+    .btn {
+      @extend .text-uppercase;
+    }
+  }
+  @include media-breakpoint-up(xl) {
+    .contact-btn {
+      justify-content: flex-end;
+    }
+
+    .btn {
+      padding: 1.5rem 8rem;
+    }
+  }
+  @include media-breakpoint-down(xl) {
+    margin-top: 0em;
+    margin-bottom: 8rem;
+    .contact-btn {
+      margin-top: 0rem;
+      justify-content: center;
+    }
+    .contact-message {
+      text-align: center;
+    }
+
+    .btn {
+      margin-top: 4rem;
+      width: 50%;
+    }
+  }
+}
