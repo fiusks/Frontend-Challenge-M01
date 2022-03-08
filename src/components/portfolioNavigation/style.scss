@@ -1,0 +1,43 @@
+@import "../../App.scss";
+.portfolio-nav-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0rem 8rem 0rem;
+  border-top: 1px solid rgba(51, 50, 61, 0.15);
+  border-bottom: 1px solid rgba(51, 50, 61, 0.15);
+  padding: 3rem 0rem;
+  .left-nav-container,
+  .right-nav-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    p {
+      color: transparentize($color: $primary-dark, $amount: 0.5);
+    }
+  }
+  a {
+    &:visited,
+    &:focus,
+    &:link,
+    &:hover,
+    &:active {
+      text-decoration: none;
+      color: $primary-dark;
+    }
+  }
+  .right-nav {
+    margin-right: 4rem;
+  }
+  .left-nav {
+    margin-left: 4rem;
+  }
+  .right-nav,
+  .left-nav,
+  img {
+    cursor: pointer;
+  }
+  .right-nav-container {
+    flex-direction: row-reverse;
+  }
+}
