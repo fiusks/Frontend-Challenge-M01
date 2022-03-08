@@ -5,12 +5,14 @@ import { useState, useEffect } from "react";
 import arrowRight from "../../assets/images/arrowRight.svg";
 import arrowLeft from "../../assets/images/arrowLeft.svg";
 
-function PortolioNavigation() {
+function PortfolioNavigation() {
   const location = useLocation();
 
-  const pages = ["manage", "bookmark", "insure", "fylo"];
+  const [nextPage, setNextPage] = useState("");
+  const [previousPage, setPreviousPage] = useState("");
 
   useEffect(() => {
+    const pages = ["manage", "bookmark", "insure", "fylo"];
     function navigatePages() {
       const pageIndex = pages.indexOf(
         location.pathname.replace("/portfolio/", "")
@@ -29,10 +31,7 @@ function PortolioNavigation() {
       return;
     }
     navigatePages();
-  }, []);
-
-  const [nextPage, setNextPage] = useState("");
-  const [previousPage, setPreviousPage] = useState("");
+  }, [nextPage, previousPage, location.pathname]);
 
   return (
     <Container>
@@ -66,4 +65,4 @@ function PortolioNavigation() {
   );
 }
 
-export default PortolioNavigation;
+export default PortfolioNavigation;
