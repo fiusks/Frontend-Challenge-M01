@@ -1,5 +1,5 @@
 import "./style.scss";
-import { Container, Nav, Navbar, Col, Row } from "react-bootstrap";
+import { Nav, Navbar, Col, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import trianglesIcon from "../../assets/images/trianglesHeader.svg";
 import linkedinIcon from "../../assets/images/linkedinIcon.svg";
