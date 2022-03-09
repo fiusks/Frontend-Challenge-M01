@@ -6,6 +6,12 @@
 .layout-footer {
   padding: 0rem 16.5rem;
   height: 6rem;
+  @include media-breakpoint-down(lg) {
+    padding: 0rem 10rem;
+  }
+  @include media-breakpoint-down(sm) {
+    padding: 0rem 5rem;
+  }
   .navigation-links {
     gap: 4.2rem;
     margin-left: 4.8rem;
