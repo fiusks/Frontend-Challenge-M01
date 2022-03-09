@@ -7,6 +7,9 @@
   @include media-breakpoint-down(lg) {
     padding: 0rem 10rem;
   }
+  @include media-breakpoint-down(sm) {
+    padding: 0rem 5rem;
+  }
 
   .header-logo-container {
     width: 100vw;
