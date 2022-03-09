@@ -16,13 +16,9 @@ function Home() {
               <h1>
                 Olá, me chamo Rafael Barros e eu amo construir websites lindos
               </h1>
-              <Button as={"a"} href="#about-me">
-                <Row>
-                  <Col sm={2}>
-                    <img src={arrowDown} alt="arrow down icon" />
-                  </Col>
-                  <Col>about me</Col>
-                </Row>
+              <Button as={"a"} href="#about-me" className="about-me-btn">
+                <img src={arrowDown} alt="arrow down icon" />
+                about me
               </Button>
             </div>
           </Col>

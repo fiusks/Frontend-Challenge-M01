@@ -11,6 +11,9 @@
       a {
         @extend .text-uppercase;
         width: 50%;
+        img {
+          margin-right: 1rem;
+        }
       }
 
       .hero-section-text {
@@ -31,10 +34,14 @@
           height: 100%;
         }
         @include media-breakpoint-down(lg) {
+          a {
+            width: 100%;
+          }
           width: 100%;
         }
         @include media-breakpoint-down(md) {
           height: 100%;
+
           h1 {
             font-size: 2.2rem;
           }
@@ -49,7 +56,10 @@
     .card-image {
       img {
         height: 100%;
-        width: auto;
+
+        @include media-breakpoint-down(xl) {
+          height: auto;
+        }
       }
     }
     .col-card-content {
@@ -57,14 +67,12 @@
       justify-content: flex-end;
       .card-content {
         padding: 5rem 0rem;
-      }
-    }
-  }
-  @include media-breakpoint-up(xl) {
-    .card-content {
-      width: 70%;
-      .btn {
-        width: 50%;
+        @include media-breakpoint-up(xl) {
+          width: 70%;
+          .btn {
+            width: 50%;
+          }
+        }
       }
     }
   }
