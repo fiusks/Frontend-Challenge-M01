@@ -1,0 +1,40 @@
+@import "../../App.scss";
+.layout-header {
+  .dropdown,
+  &.show {
+    position: absolute;
+    top: -1rem;
+    right: 1rem;
+    @include media-breakpoint-up(md) {
+      right: 3rem;
+    }
+  }
+  .dropdown-menu {
+    &.show {
+      position: absolute;
+      left: -125px;
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  .dropdown-item {
+    &:hover,
+    &focus {
+      background-color: white;
+    }
+  }
+  .language-btn {
+    &.btn {
+      width: 100%;
+      background-color: white;
+      color: black;
+      border: none;
+    }
+    img {
+      width: 50px;
+      margin-right: 1rem;
+    }
+  }
+}
