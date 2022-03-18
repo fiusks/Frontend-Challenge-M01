@@ -5,33 +5,21 @@ import fyloPreview from "../../../assets/images/fyloPreview.png";
 import portfolioFylo from "../../../assets/images/portfolioFylo.png";
 import PortfolioDetailed from "../../../components/portfolioDetailed";
 import PortfolioNavigation from "../../../components/portfolioNavigation";
+import { useTranslation } from "react-i18next";
 
 function Fylo() {
+  const { t } = useTranslation();
   const projectResume = (
     <>
-      <h2>Fylo</h2>
-      <p>
-        Esse projeto me fez criar uma landing page responsiza de acordo com o
-        design que recebi. Usei HTML5, CSS Grid e JavaScript para as áreas
-        interativas, como o slider de testimoniais.
-      </p>
-      <span>Interaction Design / Front End Development</span>
+      <h2>PayCheck</h2>
+      <p>{t("paycheck_text")}</p>
+      <span>{t("paycheck_technologies")}</span>
       <br />
-      <span>HTML / CSS / JS</span>
+      <span>{t("paycheck_text")}</span>
       <Button variant="outline-primary-dark">visit</Button>
     </>
   );
-  const projectDescription = (
-    <p>
-      Este projeto foi um desafio de front-end do Frontend Mentor. É uma
-      plataforma que te faz práticar construindo websites a partir de um design
-      e casos de usuário. Cada desafio contém designs mobile e desktop para
-      ilustrar como o website seria em diferentes tamanhos de tela. Criar esses
-      projetos me ajudou a refinar meu fluxo de trabalho e resolver problemas de
-      código da vida real. Eu aprendi algo novo com cada projeto, me ajudando a
-      melhorar e adaptar meu estilo.
-    </p>
-  );
+  const projectDescription = <p>{t("paycheck_project_text")}</p>;
   return (
     <>
       <PortfolioDetailed

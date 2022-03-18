@@ -1,44 +1,40 @@
 import "./style.scss";
 import { Button } from "react-bootstrap";
-import manageMain from "../../../assets/images/manageMain.png";
-import managePreview from "../../../assets/images/managePreview.png";
-import portfolioManage from "../../../assets/images/portfolioManage.png";
+import cubosFlixMain from "../../../assets/images/cubosFlixMain.png";
+import cubosFlixPreview1 from "../../../assets/images/cubosFlixStatic1.png";
+import cubosFlixPreview2 from "../../../assets/images/cubosFlixStatic2.png";
 import PorfolioDetailed from "../../../components/portfolioDetailed";
 import PortolioNavigation from "../../../components/portfolioNavigation";
+import { useTranslation, Trans } from "react-i18next";
 
 function Manage() {
+  const { t } = useTranslation();
   const projectResume = (
     <>
-      <h2>Manage</h2>
-      <p>
-        Esse projeto me fez criar uma landing page responsiza de acordo com o
-        design que recebi. Usei HTML5, CSS Grid e JavaScript para as áreas
-        interativas, como o slider de testimoniais.
-      </p>
-      <span>Interaction Design / Front End Development</span>
+      <h2>Cubos Flix</h2>
+      <Trans>
+        <p>{t("cubos_flix_text")}</p>
+      </Trans>
+      <span>{t("cubos_flix_technologies")}</span>
       <br />
-      <span>HTML / CSS / JS</span>
-      <Button variant="outline-primary-dark">visit</Button>
+      <span>JS / HTML / CSS / React</span>
+      <Button
+        variant="outline-primary-dark"
+        href="https://cubosflix-byfiusks.netlify.app/"
+        target="_blank"
+      >
+        {t("generic_visit")}
+      </Button>
     </>
   );
-  const projectDescription = (
-    <p>
-      Este projeto foi um desafio de front-end do Frontend Mentor. É uma
-      plataforma que te faz práticar construindo websites a partir de um design
-      e casos de usuário. Cada desafio contém designs mobile e desktop para
-      ilustrar como o website seria em diferentes tamanhos de tela. Criar esses
-      projetos me ajudou a refinar meu fluxo de trabalho e resolver problemas de
-      código da vida real. Eu aprendi algo novo com cada projeto, me ajudando a
-      melhorar e adaptar meu estilo.
-    </p>
-  );
+  const projectDescription = <p>{t("cubos_flix_project_text")}</p>;
   return (
     <>
       <PorfolioDetailed
-        mainImg={manageMain}
+        mainImg={cubosFlixMain}
         projectResume={projectResume}
-        secondaryImg={portfolioManage}
-        auxiliarImg={managePreview}
+        secondaryImg={cubosFlixPreview1}
+        auxiliarImg={cubosFlixPreview2}
         projectDescription={projectDescription}
       />
       <PortolioNavigation />

@@ -2,61 +2,51 @@ import "./style.scss";
 import { Link } from "react-router-dom";
 import PorfolioCard from "../../../components/portfolio-card";
 import { Button, Row, Col } from "react-bootstrap";
-import portfolioManage from "../../../assets/images/portfolioManage.png";
-import portfolioBookmark from "../../../assets/images/portfolioBookmark.png";
+import portfolioMain from "../../../assets/images/portfolioMain.png";
+import portfolioCubosFlix from "../../../assets/images/portfolioCubosFlix.jpg";
 import portfolioInsure from "../../../assets/images/portfolioInsure.png";
 import portfolioFylo from "../../../assets/images/portfolioFylo.png";
+import { useTranslation, Trans } from "react-i18next";
 
 function Portfolio() {
+  const { t } = useTranslation();
   return (
     <Row>
       <Col className="portfolio-card">
-        <PorfolioCard img={portfolioManage}>
-          <h2>Manage</h2>
-          <p>
-            Esse projeto me fez criar uma landing page responsiva de acordo com
-            o design que recebi. Usei HTML5, CSS Grid e JavaScript para as áreas
-            interativas, como o slider de testimoniais.
-          </p>
-          <Button variant="outline-primary-dark" as={Link} to="manage">
-            check project
+        <PorfolioCard img={portfolioMain}>
+          <h2>{t("portfolio_portfolio_name")}</h2>
+          <p>{t("portfolio_portfolio_text")}</p>
+          <Button variant="outline-primary-dark" as={Link} to="portfolio">
+            {t("generic_show_project")}
           </Button>
         </PorfolioCard>
 
-        <PorfolioCard img={portfolioBookmark} flexDirection="row-reverse">
-          <h2>Bookmark</h2>
-          <p>
-            Esse projeto me fez criar uma landing page responsiza de acordo com
-            o design que recebi. Usei HTML5, CSS Grid e JavaScript para as áreas
-            interativas, como a área de Features.
-          </p>
-          <Button variant="outline-primary-dark" as={Link} to="bookmark">
-            check project
+        <PorfolioCard img={portfolioCubosFlix} flexDirection="row-reverse">
+          <h2>Cubos Flix</h2>
+          <Trans>
+            <p>{t("portfolio_cubos_text")}</p>
+          </Trans>
+
+          <Button variant="outline-primary-dark" as={Link} to="cubosflix">
+            {t("generic_show_project")}
           </Button>
         </PorfolioCard>
 
         <PorfolioCard img={portfolioInsure}>
-          <h2>Insure</h2>
-          <p>
-            Este foi um projeto pequeno que consistiu em HTML e CSS
-            principalmente. Eu construí uma landing page totalmente responsiva.
-            O único JavaScript que usei foi para o menu de navegação mobile.
-          </p>
-          <Button variant="outline-primary-dark" as={Link} to="insure">
-            check project
+          <h2>DinDin</h2>
+          <p>{t("portfolio_dindin_text")}</p>
+          <Button variant="outline-primary-dark" as={Link} to="dindin">
+            {t("generic_show_project")}
           </Button>
         </PorfolioCard>
 
         <PorfolioCard img={portfolioFylo} flexDirection="row-reverse">
-          <h2>Fylo</h2>
+          <h2>PayCheck</h2>
           <p>
-            Este projeto foi puramente HTML e CSS. Eu recebi designs mobile e
-            desktop para construir, então ele foi totalmente responsivo. Eu
-            tomei um caminho mobile-first e usei CSS moderno como Flexbox e Grid
-            para criar o layout.
+            <p>{t("portfolio_paycheck_text")}</p>
           </p>
-          <Button variant="outline-primary-dark" as={Link} to="fylo">
-            check project
+          <Button variant="outline-primary-dark" as={Link} to="paycheck">
+            {t("generic_show_project")}
           </Button>
         </PorfolioCard>
       </Col>

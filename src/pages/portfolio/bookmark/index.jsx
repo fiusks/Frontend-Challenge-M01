@@ -1,44 +1,45 @@
 import "./style.scss";
 import { Button } from "react-bootstrap";
-import bookmarkMain from "../../../assets/images/bookmarkMain.png";
-import bookmarkPreview from "../../../assets/images/bookmarkPreview.png";
-import portfolioBookmark from "../../../assets/images/portfolioBookmark.png";
+import portfolioHero from "../../../assets/images/portfolioHero.png";
+import portfolioPreview1 from "../../../assets/images/portfolioPreview1.png";
+import portfolioPreview2 from "../../../assets/images/portfolioPreview2.png";
 import PorfolioDetailed from "../../../components/portfolioDetailed";
 import PortolioNavigation from "../../../components/portfolioNavigation";
+import { useTranslation, Trans } from "react-i18next";
 
 function Bookmark() {
+  const { t } = useTranslation();
   const projectResume = (
     <>
-      <h2>Bookmark</h2>
-      <p>
-        Esse projeto me fez criar uma landing page responsiza de acordo com o
-        design que recebi. Usei HTML5, CSS Grid e JavaScript para as áreas
-        interativas, como o slider de testimoniais.
-      </p>
-      <span>Interaction Design / Front End Development</span>
+      <h2>{t("portfolio_portfolio_name")}</h2>
+      <Trans>
+        <p>{t("portfolio_text")}</p>
+      </Trans>
+
+      <span>{t("portfolio_technologies")}</span>
       <br />
       <span>HTML / CSS / JS</span>
-      <Button variant="outline-primary-dark">visit</Button>
+      <Button
+        variant="outline-primary-dark"
+        href="https://fiusks-portfolio.netlify.app/"
+        target="_blank"
+      >
+        visit
+      </Button>
     </>
   );
   const projectDescription = (
-    <p>
-      Este projeto foi um desafio de front-end do Frontend Mentor. É uma
-      plataforma que te faz práticar construindo websites a partir de um design
-      e casos de usuário. Cada desafio contém designs mobile e desktop para
-      ilustrar como o website seria em diferentes tamanhos de tela. Criar esses
-      projetos me ajudou a refinar meu fluxo de trabalho e resolver problemas de
-      código da vida real. Eu aprendi algo novo com cada projeto, me ajudando a
-      melhorar e adaptar meu estilo.
-    </p>
+    <Trans>
+      <p>{t("portfolio_project_text")}</p>
+    </Trans>
   );
   return (
     <>
       <PorfolioDetailed
-        mainImg={bookmarkMain}
+        mainImg={portfolioHero}
         projectResume={projectResume}
-        secondaryImg={portfolioBookmark}
-        auxiliarImg={bookmarkPreview}
+        secondaryImg={portfolioPreview1}
+        auxiliarImg={portfolioPreview2}
         projectDescription={projectDescription}
       />
       <PortolioNavigation />
