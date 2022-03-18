@@ -18,7 +18,7 @@ function LanguageDropdown() {
     },
   ];
   const currentLanguageCode = cookies.get("i18next") || "pt";
-  const currentLanguage = languages.find((l) => l.code === currentLanguageCode);
+
   return (
     <Dropdown>
       <Dropdown.Toggle variant="success" id="dropdown-basic">
