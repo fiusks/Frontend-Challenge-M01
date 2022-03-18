@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+# My Portfolio
+It was my first challenge of Cubos Academy Full Stack Course. The project goal was to create a portfolio like landing page with HTML and CSS only.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Goal
+My objective with this aplication is to use it as a real portfolio page and share all the challenges that I've done during the course. They are in a private repository and that is the reason why I'm rebuilding them. It's also an opportunity to review my codes and optmize them.
 
-## Available Scripts
+## The code
+It is a second version of the original challenge. After the end of the course, I rebuild the app using react and implemented some new features. You can find the original layout in the figma file.
 
-In the project directory, you can run:
+### New Features
 
-### `npm start`
+- Contact form validation using Formik and Yup
+- Sending email from contact page using the service of EmailJs
+- Translated pages for two languages (pt-br / en-us) using i18next
+- Elements transformed into reusable components in React
+- Responsive layout using Bootstrap 5
+- CSS optimization using SASS
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Refactoring
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+During the refactoration I made some modifications in the navigation system where I've changed from <a> links to hooks using useNavigate from react-router-dom
 
-### `npm test`
+All the CSS was refactored for SASS that is more efficient and makes the code cleaner
+  
+Some elements that were repetaed in the original project, were remade using the component logic from React
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
