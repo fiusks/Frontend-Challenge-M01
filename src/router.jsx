@@ -15,10 +15,10 @@ function Router() {
         <Route path="/" element={<Navigate to="home" />} />
         <Route path="home" element={<Home />} />
         <Route path="portfolio" element={<Portfolio />} />
-        <Route path="portfolio/manage" element={<Manage />} />
-        <Route path="portfolio/bookmark" element={<Bookmark />} />
-        <Route path="portfolio/insure" element={<Insure />} />
-        <Route path="portfolio/fylo" element={<Fylo />} />
+        <Route path="portfolio/portfolio" element={<Bookmark />} />
+        <Route path="portfolio/cubosflix" element={<Manage />} />
+        <Route path="portfolio/dindin" element={<Insure />} />
+        <Route path="portfolio/paycheck" element={<Fylo />} />
         <Route path="contact" element={<Contact />} />
       </Route>
     </Routes>
