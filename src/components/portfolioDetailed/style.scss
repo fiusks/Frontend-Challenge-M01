@@ -38,7 +38,8 @@
     font-size: 1.6rem;
     font-weight: bold;
   }
-  button {
+  button,
+  a {
     margin-top: 3.2rem;
     @extend .text-uppercase;
   }

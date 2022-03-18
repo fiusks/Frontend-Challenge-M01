@@ -1,5 +1,6 @@
 import "./style.scss";
 import { Row, Col } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 
 function PortfolioDetailed({
   mainImg,
@@ -8,6 +9,7 @@ function PortfolioDetailed({
   secondaryImg,
   auxiliarImg,
 }) {
+  const { t } = useTranslation();
   return (
     <Row>
       <Col className="porfolio-subpage">
@@ -22,9 +24,9 @@ function PortfolioDetailed({
           </Col>
           <Col xl={6}>
             <div className="main-section">
-              <h3>Project</h3>
+              <h3>{t("portfolio_detailed_project")}</h3>
               {projectDescription}
-              <h3>Static Previews</h3>
+              <h3>Previews</h3>
               <img src={secondaryImg} alt="Project example small" />
               <img src={auxiliarImg} alt="Project example small" />
             </div>
