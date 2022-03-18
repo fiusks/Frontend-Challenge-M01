@@ -1,0 +1,44 @@
+{
+  "nav_portfolio_link": "Portfolio",
+  "generic_go_to_portfolio": "go to portfolio",
+  "generic_contact": "Contact",
+  "generic_visit": "visit",
+  "generic_show_project": "Show project",
+
+  "home_welcome_portfolio": "Hi, welcome to my portfolio",
+  "home_about_me": "About me",
+  "home_about_me_text": "I'm a junior Full Stack developer looking for new challenges. I like to learn about technologies that help me bring fast, efficient, structured and clean solutions. I find it easy to learn new languages and I have good communication skills, having already led a consulting team with four other members. I've been working with modern technologies (<strong>NodeJS</strong>, <strong>Javascript</strong>, <strong>React</strong>, <strong>HTML</strong>, <strong>CSS</strong>) and I'm looking for remote jobs. I have a lot of experience with the remote working model since I have been working this way since 2015 in companies such as Lionbridge, Appen and IsoftStone. When I'm not coding, I usually spend my free time cycling, sailing or photographing landscapes.",
+
+  "contact_link_section_text": "Do you wanto to make projects with me?",
+  "portfolio_detailed_project": "Project",
+  "portfolio_portfolio_name": "Portfolio",
+  "portfolio_portfolio_text": "This was my first challenge of the Full Stack Course at Cubos Academy. The challenge proposal was to build a website with navigation between different pages and using flexbox to create the layout.",
+  "portfolio_cubos_text": "This project was the second challenge of the Cubos Academy Full Stack Course. The original project was made with Javascript, HTML and CSS only. At the end of the course, I refactored the code with React, implemented mobile responsiveness using Bootstrap 5 and more features.",
+  "portfolio_dindin_text": "Coming soon",
+  "portfolio_paycheck_text": "Coming soon",
+  "portfolio_nav_next": "Next Section",
+  "portfolio_nav_previous": "Previous Section",
+
+  "portfolio_text": "Creating the portfolio layout was my first challenge of the course. The construction was very simple using <strong>HTML</strong> and <strong>CSS</strong>. The main objective was to practice layouts with flexbox.",
+  "portfolio_technologies": "Interactive Design / Front End Development",
+  "portfolio_project_text": "The project aimed to reproduce a specific design from a Figma file using the flexbox system and with navigation between pages using <strong>HTML</strong> tags. The original project navigation was done with <strong>HTML</strong> <a> tags. After refactoring the project with <strong>React</strong>, I've implemented a new navigation system with NavLinks controlled with some hooks from  react-router-dom. I also used <strong>Bootstrap 5</strong> to make the layout responsive.",
+
+  "cubos_flix_text": "Cubos Flix is a website that consumes data from an external movie API and displays information such as: title, movie rating, release date and description. The project was developed using <strong>Javascript</strong>, <strong>React</strong>, <strong>HTML</strong> and <strong>SASS</strong>.",
+  "cubos_flix_technologies": "Interactive Design / Front End Development",
+  "cubos_flix_project_text": "This project was the second challenge of the Cubos Academy Course. The project aimed to consume data from an external movie API and display it according to the design provided in Figma. I made some changes to the original layout to make it responsive for mobile users and implemented new functions such as separation by genre reusing React components. In addition, the user can search movies by name, browse them left to right and get more information when clicked.",
+
+  "dindin_text": "Coming soon",
+  "dindin_technologies": "Coming soon",
+  "dindin_project_text": "Coming soon",
+
+  "paycheck_text": "Coming soon",
+  "paycheck_technologies": "Coming soon",
+  "paycheck_project_text": "Coming soon",
+
+  "contact_title": "Contact me",
+  "contact_text": "I am currently looking for Front-End, Back-End or Full Stack opportunities that I can work remotely. To get in touch, you can send me a message through the form below or through my profiles at the bottom of the page.",
+  "contact_form_name": "Name",
+  "contact_form_message": "Message",
+  "contact_form_message_placeholder": "Type your message...",
+  "contact_form_submit": "Submit"
+}
