@@ -4,26 +4,28 @@ import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import arrowRight from "../../assets/images/arrowRight.svg";
 import arrowLeft from "../../assets/images/arrowLeft.svg";
+import { useTranslation } from "react-i18next";
 
 function PortfolioNavigation() {
+  const { t } = useTranslation();
   const location = useLocation();
 
   const [nextPage, setNextPage] = useState("");
   const [previousPage, setPreviousPage] = useState("");
 
   useEffect(() => {
-    const pages = ["manage", "bookmark", "insure", "fylo"];
+    const pages = ["cubosflix", "portfolio", "dindin", "paycheck"];
     function navigatePages() {
       const pageIndex = pages.indexOf(
         location.pathname.replace("/portfolio/", "")
       );
       if (pageIndex === 0) {
-        setNextPage("bookmark");
-        setPreviousPage("fylo");
+        setNextPage("portfolio");
+        setPreviousPage("paycheck");
         return;
       } else if (pageIndex === 3) {
-        setNextPage("manage");
-        setPreviousPage("insure");
+        setNextPage("cubosflix");
+        setPreviousPage("dindin");
         return;
       }
       setNextPage(pages[pageIndex + 1]);
@@ -46,7 +48,7 @@ function PortfolioNavigation() {
             <h3>
               {previousPage.charAt(0).toUpperCase() + previousPage.slice(1)}
             </h3>
-            <p>Previous Section</p>
+            <p>{t("portfolio_nav_previous")}</p>
           </div>
         </Col>
         <Col
@@ -57,7 +59,7 @@ function PortfolioNavigation() {
           <img src={arrowRight} alt="arrow Right" />
           <div as={Link} className="right-nav">
             <h3>{nextPage.charAt(0).toUpperCase() + nextPage.slice(1)}</h3>
-            <p>Next Section</p>
+            <p>{t("portfolio_nav_next")}</p>
           </div>
         </Col>
       </Row>
