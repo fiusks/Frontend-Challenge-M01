@@ -2,6 +2,9 @@ import "./style.scss";
 import { Formik } from "formik";
 import * as yup from "yup";
 import { Form, Row, Col, Button } from "react-bootstrap";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import { useTranslation } from "react-i18next";
 
 const schema = yup.object().shape({
   name: yup.string().required("The field Name is required"),
@@ -13,10 +16,31 @@ const schema = yup.object().shape({
 });
 
 function ContactForm() {
+  const { t } = useTranslation();
+  const mailForm = useRef();
+  const sendEmail = () => {
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        mailForm.current,
+        process.env.REACT_APP_USER_ID
+      )
+      .then(
+        () => {
+          alert("Mensagem enviada com sucesso!");
+        },
+        () => {
+          alert(
+            "Ocorreu um erro no envio. Tente novamente ou prossiga por outro canal de comunicação"
+          );
+        }
+      );
+  };
   return (
     <Formik
       validationSchema={schema}
-      onSubmit={console.log}
+      onSubmit={() => sendEmail()}
       initialValues={{
         name: "",
         email: "",
@@ -36,10 +60,11 @@ function ContactForm() {
           noValidate
           onSubmit={handleSubmit}
           className="contact-form-container"
+          ref={mailForm}
         >
           <Row>
             <Form.Group as={Col} controlId="validationFormikName">
-              <Form.Label>Name</Form.Label>
+              <Form.Label>{t("contact_form_name")}</Form.Label>
               <Form.Control
                 type="text"
                 name="name"
@@ -73,12 +98,12 @@ function ContactForm() {
           </Row>
           <Row>
             <Form.Group as={Col} controlId="validationFormikMessage">
-              <Form.Label>Message</Form.Label>
+              <Form.Label>{t("contact_form_message")}</Form.Label>
               <Form.Control
                 as="textarea"
                 rows={5}
                 type="text"
-                placeholder="Type your message here..."
+                placeholder={t("contact_form_message_placeholder")}
                 name="message"
                 value={values.message}
                 onChange={handleChange}
@@ -90,7 +115,7 @@ function ContactForm() {
               </Form.Control.Feedback>
             </Form.Group>
           </Row>
-          <Button type="submit">Submit</Button>
+          <Button type="submit">{t("contact_form_submit")}</Button>
         </Form>
       )}
     </Formik>
