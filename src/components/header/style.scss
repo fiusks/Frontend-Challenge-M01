@@ -1,14 +1,16 @@
 @import "../../App.scss";
 
 .layout-header {
+  position: relative;
   margin-top: 6.4rem;
   margin-bottom: 9.4rem;
   padding: 0rem 16.5rem;
+
   @include media-breakpoint-down(lg) {
     padding: 0rem 10rem;
   }
   @include media-breakpoint-down(sm) {
-    padding: 0rem 5rem;
+    padding: 0rem 8rem;
   }
 
   .header-logo-container {

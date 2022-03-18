@@ -4,8 +4,10 @@ import { Link } from "react-router-dom";
 import trianglesIcon from "../../assets/images/trianglesHeader.svg";
 import linkedinIcon from "../../assets/images/linkedinIcon.svg";
 import githubIcon from "../../assets/images/githubIcon.svg";
+import { useTranslation } from "react-i18next";
 
 function Footer() {
+  const { t } = useTranslation();
   return (
     <Row className="gx-0">
       <Col>
@@ -19,10 +21,10 @@ function Footer() {
                 Home
               </Nav.Link>
               <Nav.Link as={Link} to="portfolio">
-                Portfolio
+                {t("nav_portfolio_link")}
               </Nav.Link>
               <Nav.Link as={Link} to="contact">
-                Contact
+                {t("generic_contact")}
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
