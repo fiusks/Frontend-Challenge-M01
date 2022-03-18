@@ -5,7 +5,11 @@ import PorfolioCard from "../../components/portfolio-card";
 import profilepicture from "../../assets/images/Me.jpg";
 import homeImage from "../../assets/images/homeimage.png";
 import arrowDown from "../../assets/images/arrowDown.png";
+import { useTranslation, Trans } from "react-i18next";
+
 function Home() {
+  const { t } = useTranslation();
+
   return (
     <Row>
       <Col className="home-container">
@@ -13,29 +17,18 @@ function Home() {
           <Col className="home-hero-section ">
             <img src={homeImage} alt="monitor with open app inside" />
             <div className="hero-section-text">
-              <h1>
-                Olá, me chamo Rafael Barros e eu amo construir websites lindos
-              </h1>
+              <h1>{t("home_welcome_portfolio")}</h1>
               <Button as={"a"} href="#about-me" className="about-me-btn">
                 <img src={arrowDown} alt="arrow down icon" />
-                about me
+                {t("home_about_me")}
               </Button>
             </div>
           </Col>
         </Row>
         <PorfolioCard img={profilepicture}>
-          <h1 id="about-me">About me</h1>
-          <p>
-            Sou um desenvolvedor front-end júnior procurando por uma
-            oportunidade. Eu foco em escrever HTML acessível, usando práticas
-            modernas de CSS e escrevendo um JavaScript limpo. Quando estou
-            escrevendo código JavaScript, na maioria das vezes estou usando
-            React, mas posso me adapta para qualquer ferramenta se necessário.
-            Moro em Londres, UK, mas também seria feliz trabalhando remotamente
-            e tenho experiência em times remotos. Quando não estou codando,
-            poderá me achar fora de casa. Eu adoro estar próximo a natureza seja
-            para uma caminhada, corrida ou ciclismo. Eu amaria se você desse uma
-            olhada no meu trabalho.
+          <h1 id="about-me">{t("home_about_me")}</h1>
+          <p style={{ textAlign: "justify" }}>
+            <Trans>{t("home_about_me_text")}</Trans>
           </p>
           <Button
             as={Link}
@@ -43,7 +36,7 @@ function Home() {
             variant="outline-primary-dark"
             className="home-card-btn"
           >
-            go to my portfolio
+            {t("generic_go_to_portfolio")}
           </Button>
         </PorfolioCard>
       </Col>
