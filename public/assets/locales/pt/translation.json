@@ -20,8 +20,8 @@
   "portfolio_nav_previous": "Seção Anterior",
 
   "portfolio_text": "A criação do layout de portfólio foi meu primeiro desafio do curso. A construção foi bem simples utilizando <strong>HTML</strong> e <strong>CSS<strong>. O principal objetivo foi de praticar a criação de layouts com flexbox.",
-  "portfolio_project_text": "O projeto teve como objetivo reproduzir o design proposto em um arquivo do figma utilizando o sistema flexbox e com navegação entre as páginas utilizando tags <strong>HTML</strong>. A navegação do projeto original foi feita com tags <strong>HTML</strong> <a>. Após a refatoração do projeto com <strong>React</strong>, a navegação passou a ser feita com NavLinks e controlada com alguns hooks do react-router-dom. Além disso, adicionei responsividade utilizando o <strong>Bootstrap 5</strong>",
   "portfolio_technologies": "Design interativo / Desenvolvimento Front End",
+  "portfolio_project_text": "O projeto teve como objetivo reproduzir o design proposto em um arquivo do figma utilizando o sistema flexbox e com navegação entre as páginas utilizando tags <strong>HTML</strong>. Após a refatoração do projeto com <strong>React</strong>, a navegação passou a ser feita com NavLinks e controlada com alguns hooks do react-router-dom. Além disso, adicionei responsividade utilizando o <strong>Bootstrap 5</strong>",
 
   "cubos_flix_text": "O Cubos Flix é um site que consome dados de uma API externa de filmes e exibe informações como: título, nota do filme, data de lançamento e descrição. O projeto foi desenvolvido utilizando <strong>Javascript</strong>, <strong>React</strong>, <strong>HTML</strong> e <strong>SASS</strong>.",
   "cubos_flix_technologies": "Design interativo / Desenvolvimento Front End",
