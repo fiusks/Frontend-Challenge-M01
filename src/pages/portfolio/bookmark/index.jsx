@@ -21,7 +21,7 @@ function Bookmark() {
       <span>HTML / CSS / JS</span>
       <Button
         variant="outline-primary-dark"
-        href="https://fiusks-portfolio.netlify.app/"
+        href="https://github.com/fiusks/Frontend-Challenge-M01"
         target="_blank"
       >
         visit
