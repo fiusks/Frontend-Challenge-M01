@@ -4,8 +4,17 @@ It was my first challenge of Cubos Academy Full Stack Course. The project goal w
 ## Goal
 My objective with this aplication is to use it as a real portfolio page and share all the challenges that I've done during the course. They are in a private repository and that is the reason why I'm rebuilding them. It's also an opportunity to review my codes and optmize them.
 
+## Figma Design
+
+### Home
+![Home page template in Figma](figmaHome.jpg)
+### Portfolio Detail
+![Portfolio Detail page template in Figma](figmaPortfolio.jpg)  
+### Contact
+![Contact page template in Figma](figmaContact.jpg)  
+
 ## The code
-It is a second version of the original challenge. After the end of the course, I rebuild the app using react and implemented some new features. You can find the original layout in the figma file.
+It is a second version of the original challenge. After the end of the course, I redid the app using react and implemented some new features. You can find the original layout in the figma file.
 
 ### New Features
 
@@ -35,4 +44,3 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
-
