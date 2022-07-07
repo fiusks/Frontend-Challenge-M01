@@ -1,5 +1,5 @@
 <h1 align="center">
-     <a href="https://fiusks-portfolio.netlify.app/home" alt="site do ecoleta"> Portfólio App </a>
+     <a href="https://fiusks-portfolio.netlify.app/home" alt="site do ecoleta"> Portfolio App </a>
 </h1>
 
 <div align="center">
@@ -8,96 +8,96 @@
 
 </div>
 
-## Sobre o projeto
+## About
 
-O projeto foi refatorado a partir de um dos desafios do curso de Desenvolvimento de Software da [Cubos Academy](https://cubos.academy/), com o intuito de ser utilizado como um portfólio real.
+This project is a result of the refactoring process of one of the challenges of the Software Development course from [Cubos Academy](https://cubos.academy/), in order to be used as a real portfolio.
 
-Todos os projetos desenvolvidos ao longo do curso estavam em repositórios privados e por isso estou refazendo as aplicações, buscando melhorias e implementando novas tecnologias.
+All projects developed along the course were in private repositories. Therefore, I'm rebuilding than and implementing new technologies.
 
-A página do projeto pode ser acessada [aqui](https://fiusks-portfolio.netlify.app/).
+The project page can be accessed [here](https://fiusks-portfolio.netlify.app/).
 
-# Tabela de conteúdos
+# Table of Contents
 
 <!--ts-->
 
-- [Funcionalidades](#funcionalidades)
+- [Features](#features)
 - [Layout](#layout)
     - [Home](#home)
-    - [Portfólio](#portfólio)
-    - [Contato](#contato)
-- [Como executar o projeto](#como-executar-o-projeto)
-  - [Pré-requisitos](#pré-requisitos)
-  - [Rodando a aplicação](#rodando-a-aplicação)
-- [Tecnologias](#tecnologias)
-- [Autor](#autor)
+    - [Portfolio](#portfolio)
+    - [Contact](#contact)
+- [How to run](#how-to-run)
+  - [Requirements](#requirements)
+  - [Running the app](#running-the-app)
+- [Technologies](#technologies)
+- [Author](#author)
 
 <!--te-->
 
 
 ---
-## Funcionalidades
+## Features
 
-- [x] Layout responsivo (web e mobile)
-- [x] Páginas disponíveis em inglês e português
-- [x] Validação de formulário
-- [x] Envio de e-mail
+- [x] Responsive layout (web and mobile)
+- [x] Multilanguage pages (pt-BR / en-US)
+- [x] Form validation
+- [x] Handle send e-mail
 
 ---
 
 ## Layout
 
-O design web não foi fornecido durante o desafio, mas fiz algumas alterações para tornar a página responsiva e compatível para usuários mobile.
+Mobile design was not provided during the challenge, but I made some changes to make the page responsive and mobile friendly.
 
-*Segue abaixo o Layout original do desafio, o qual foi utilizado como modelo para esse projeto. 
+*Below is the original layout of the challenge, which was used as reference for this project.
 
 
 
 ### Home
 ![Home page template in Figma](figmaHome.jpg)
 
-### Portfólio
+### Portfolio
 ![Portfolio Detail page template in Figma](figmaPortfolio.jpg)  
-### Contato
+### Contact
 ![Contact page template in Figma](figmaContact.jpg)  
 
 ---
 
 
-## Como executar o projeto
+## How to run
 
-### Pré-requisitos
+### Requirements
 
-Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+Before starting, you will the following tools installed on your machine:
 [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/).
 
-#### Rodando a aplicação
+#### Running the app
 
 ```bash
 
-# Clone este repositório
+# Clone this repository
 $ git clone git@github.com:fiusks/myportfolio.git
 
-# Vá para a pasta da aplicação
+# Go to the myportfolio folder
 $ cd myportfolio
 
-# Instale as dependências
+# Install dependencies
 $ npm install
 
-# Execute a aplicação em modo de desenvolvimento
+# Run the app
 $ npm start
 
 # A aplicação será aberta na porta:3000 - acesse http://localhost:3000
 
 ```
-
 ---
 
-## Tecnologias
+## Technologies
 
-As seguintes ferramentas foram utilizadas na construção do projeto:
+The following technologies were used for this project:
 
 #### **Frontend** [React](https://reactjs.org/)
 
+- **[EmailJS](https://www.emailjs.com/)**
 - **[Flag-icons](https://github.com/lipis/flag-icons)**
 - **[Formik](https://formik.org/)**
 - **[i18next](https://www.i18next.com/)**
@@ -108,9 +108,9 @@ As seguintes ferramentas foram utilizadas na construção do projeto:
 - **[Yup](https://github.com/jquense/yup)**
 
 
-> Veja o arquivo [package.json](https://github.com/fiusks/myportfolio/blob/main/package.json)
+> Check the file [package.json](https://github.com/fiusks/myportfolio/blob/main/package.json)
 
-## Autor
+## Author
 
 <a href="https://blog.rocketseat.com.br/author/thiago/">
  <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/68557347?v=4" width="100px;" alt=""/>
