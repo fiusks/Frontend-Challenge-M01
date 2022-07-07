@@ -2,7 +2,7 @@ import "./style.scss";
 import { Link } from "react-router-dom";
 import PorfolioCard from "../../../components/portfolio-card";
 import { Button, Row, Col } from "react-bootstrap";
-import portfolioMain from "../../../assets/images/portfolioMain.png";
+import portfolioDindin from '../../../assets/images/portfolioDindin.png'
 import portfolioCubosFlix from "../../../assets/images/portfolioCubosFlix.jpg";
 import portfolioInsure from "../../../assets/images/portfolioInsure.png";
 import portfolioFylo from "../../../assets/images/portfolioFylo.png";
@@ -13,10 +13,11 @@ function Portfolio() {
   return (
     <Row>
       <Col className="portfolio-card">
-        <PorfolioCard img={portfolioMain}>
-          <h2>{t("portfolio_portfolio_name")}</h2>
-          <p>{t("portfolio_portfolio_text")}</p>
-          <Button variant="outline-primary-dark" as={Link} to="portfolio">
+
+      <PorfolioCard img={portfolioDindin} >
+          <h2>Dindin</h2>
+          <p>{t("portfolio_dindin_text")}</p>
+          <Button variant="outline-primary-dark" href="https://mydindin.netlify.app/" target="_blank">
             {t("generic_show_project")}
           </Button>
         </PorfolioCard>
@@ -27,24 +28,16 @@ function Portfolio() {
             <p>{t("portfolio_cubos_text")}</p>
           </Trans>
 
-          <Button variant="outline-primary-dark" as={Link} to="cubosflix">
+          <Button variant="outline-primary-dark" href="https://cubosflix-byfiusks.netlify.app/" target="_blank">
             {t("generic_show_project")}
           </Button>
         </PorfolioCard>
 
-        <PorfolioCard img={portfolioInsure}>
-          <h2>DinDin</h2>
-          <p>{t("portfolio_dindin_text")}</p>
-          <Button variant="outline-primary-dark" as={Link} to="dindin">
-            {t("generic_show_project")}
-          </Button>
-        </PorfolioCard>
 
-        <PorfolioCard img={portfolioFylo} flexDirection="row-reverse">
-          <h2>PayCheck</h2>
-          <p>
-            <p>{t("portfolio_paycheck_text")}</p>
-          </p>
+
+        <PorfolioCard img={portfolioFylo} >
+          <h2>Account Book</h2>
+          <p>{t("portfolio_paycheck_text")}</p>
           <Button variant="outline-primary-dark" as={Link} to="paycheck">
             {t("generic_show_project")}
           </Button>
