@@ -32,7 +32,7 @@ function Footer() {
           <Navbar.Brand href="https://github.com/fiusks">
             <img src={githubIcon} alt="logo icon" />
           </Navbar.Brand>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="https://www.linkedin.com/in/rafabarros1/">
             <img src={linkedinIcon} alt="logo icon" />
           </Navbar.Brand>
         </Navbar>
